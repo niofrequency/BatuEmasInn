@@ -609,6 +609,16 @@ h6 {
     background-image: url(../img/icon/kitchen.png);
 }
 
+#amenities .icon.icon-25 {
+    background-image: url(../img/icon/time-icon.PNG); /* Specify the path to your time-icon image */
+    /* Add any other necessary styles */
+}
+
+#amenities .icon.icon-15 {
+    background-image: url(../img/icon/parking-icon.PNG); /* Specify the path to your parking-icon image */
+    /* Add any other necessary styles */
+}
+
 /* ================================================= */
 /* ------------------ About Style ------------------ */
 /* ================================================= */
