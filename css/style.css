@@ -586,11 +586,11 @@ h6 {
 }
 
 #amenities .icon.icon-8 {
-    background-image: url(../img/icon/call-hover.png);
+    background-image: url(../img/cleaner.PNG);
 }
 
 #amenities .icon.icon-8:hover {
-    background-image: url(../img/icon/call.png);
+    background-image: url(../img/cleaner.PNG);
 }
 
 #amenities .icon.icon-9 {
