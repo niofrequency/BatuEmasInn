@@ -26,8 +26,9 @@
         <link href="css/hover-style.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-	    <!-- Whatsapp Button -->
-	    <style>
+	    
+ <!-- WhatsApp Style -->
+<style>
     .whatsapp-popup {
         display: none;
         position: fixed;
@@ -39,16 +40,17 @@
     .whatsapp-popup-content {
         background-color: #25d366;
         color: #fff;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        max-width: 300px;
     }
 
     .whatsapp-popup-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .whatsapp-popup-body {
@@ -59,10 +61,11 @@
         display: inline-block;
         background-color: #fff;
         color: #25d366;
-        padding: 8px 15px;
+        padding: 10px 20px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         font-weight: bold;
+        transition: background-color 0.3s ease;
     }
 
     .whatsapp-link:hover {
@@ -72,6 +75,11 @@
     .close-whatsapp-popup {
         cursor: pointer;
         font-size: 20px;
+        color: #fff;
+    }
+
+    .close-whatsapp-popup:hover {
+        color: #ccc;
     }
 </style>
 	    
@@ -79,18 +87,12 @@
 
     <body>
 
-	    <!-- WhatsApp Popup -->
-<div id="whatsapp-popup" class="whatsapp-popup">
-    <div class="whatsapp-popup-content">
-        <div class="whatsapp-popup-header">
-            <p>Need assistance? Chat with us on WhatsApp!</p>
-            <span class="close-whatsapp-popup" onclick="closeWhatsappPopup()">&times;</span>
-        </div>
-        <div class="whatsapp-popup-body">
-            <p>Hi! How can we help you today?</p>
-            <a href="https://wa.me/+62085218125850" target="_blank" class="whatsapp-link">Chat</a>
-        </div>
-    </div>
+
+	    <!-- WhatsApp Button -->
+<div id="whatsapp-button">
+  <a href="https://wa.me/+62082226644055" target="_blank">
+    <img src="phone-icon.png" alt="Phone Icon">
+  </a>
 </div>
 
 	    <!-- WhatsApp Popup Script -->
