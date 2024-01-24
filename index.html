@@ -90,12 +90,18 @@
 <!-- WhatsApp Popup -->
 <div id="whatsapp-popup" class="whatsapp-popup">
     <div class="whatsapp-popup-content">
-        <a href="https://wa.me/+62082226644055" target="_blank" class="whatsapp-link">Chat</a>
+        <div class="whatsapp-popup-header">
+            <p>Need assistance? Chat with us on WhatsApp!</p>
+            <span class="close-whatsapp-popup" onclick="closeWhatsappPopup()">&times;</span>
+        </div>
+        <div class="whatsapp-popup-body">
+            <p>Hi! How can we help you today?</p>
+            <a href="https://wa.me/+62082226644055" target="_blank" class="whatsapp-link">Chat</a>
+        </div>
     </div>
 </div>
-	  
 
-	    <!-- WhatsApp Popup Script -->
+<!-- WhatsApp Popup Script -->
 <script>
     function openWhatsappPopup() {
         document.getElementById("whatsapp-popup").style.display = "block";
