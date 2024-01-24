@@ -30,64 +30,65 @@
 <!-- WhatsApp Style -->
 <style>
     .Btn {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  /* overflow: hidden; */
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        position: fixed;
+        bottom: 15px; /* Adjust the bottom position as needed */
+        right: 15px; /* Adjust the right position as needed */
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
 
-.svgContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  backdrop-filter: blur(0px);
-  letter-spacing: 0.8px;
-  border-radius: 10px;
-  transition: all 0.3s;
-  border: 1px solid rgba(156, 156, 156, 0.466);
-}
+    .svgContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        letter-spacing: 0.8px;
+        border-radius: 10px;
+        transition: all 0.3s;
+        border: 1px solid rgba(156, 156, 156, 0.466);
+    }
 
-.BG {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #075e54;
-  z-index: -1;
-  border-radius: 10px;
-  pointer-events: none;
-  transition: all 0.3s;
-}
+    .BG {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #075e54;
+        z-index: -1;
+        border-radius: 10px;
+        pointer-events: none;
+        transition: all 0.3s;
+    }
 
-.Btn:hover .BG {
-  transform: rotate(35deg);
-  transform-origin: bottom;
-}
+    .Btn:hover .BG {
+        transform: rotate(35deg);
+        transform-origin: bottom;
+    }
 
-.Btn:hover .svgContainer {
-  background-color: rgba(156, 156, 156, 0.466);
-  backdrop-filter: blur(4px);
-}
-
+    .Btn:hover .svgContainer {
+        background-color: rgba(156, 156, 156, 0.466);
+        backdrop-filter: blur(4px);
+    }
 </style>
+
 	    
     </head>
 
     <body>
 
 <!-- WhatsApp Button -->
-<button class="Btn" onclick="initiateWhatsAppCall()">
+<button class="Btn" onclick="initiateWhatsAppMessage()">
   <span class="svgContainer">
     <svg
       viewBox="0 0 448 512"
@@ -105,10 +106,14 @@
 
 <!-- WhatsApp Popup Script -->
 <script>
-    function initiateWhatsAppCall() {
-        window.location.href = "tel:+62082226644055";
+    function initiateWhatsAppMessage() {
+        var phoneNumber = "+62082226644055"; // Add your WhatsApp number here
+        var message = "Hello!"; // Add your predefined message here
+        var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappURL, '_blank');
     }
 </script>
+
 
 
 	    
